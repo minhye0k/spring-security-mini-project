@@ -1,0 +1,21 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:~/test
+    username: test
+    password: Asdf1234!
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+jwt:
+  secret-key: dc7e2ab658e728f30bacaa977f18525619c0e2354b9712b7330efd22874f4e25f694dd2a0429b4d5d4aae2d5ca4b3775790439a7b1c2908827a835619e4a56bd
+  refresh-secret-key: 11cfb5ee04f0e42319619da997f30b251d2ba012b16506544e084e6908f1d6728354f6bfdf075a4d8bb47ef03b1957880a505e8fec699e6d341de798f561d37b
+  expire-min: 5
+  refresh-expire-min: 20
